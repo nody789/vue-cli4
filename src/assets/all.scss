@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "~bootstrap/scss/bootstrap";
+
+@import "./_dashboard";
+@import "./carts";
+@import "./checkout";
+@import "./custom-bs4";
+@import "./form";
+@import "./header";
+@import "./item";
+@import "./layout";
+@import "./utilites";
+@import "./category";
+@import "./checkout-1";
+@import "./checkout-2";
+@import "./about";

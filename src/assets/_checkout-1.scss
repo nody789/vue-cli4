@@ -1,0 +1,68 @@
+.container_fix{
+    width:90%;
+    margin:0 auto;
+    max-width: 1200px;
+  }
+  h3 {
+    padding-top: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .order {
+    border: 1px solid white;
+    border-radius:6px;
+    padding: 1.5rem;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    list-style: none;
+    .orderList {
+      border-bottom: 1px solid rgb(185, 184, 184);
+      .pro-img {
+        width: 5rem;
+        height: 4rem;
+        margin-top: 1.5rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .pro-name, .pro_qty, .pro_price, .pro_del {
+        margin-top: 1.5rem;
+      }
+      .pro-name, .pro_price, .pro_qty {
+        padding-top: 1rem;
+      }
+    }
+    
+  }.coupon-send{
+    background-color:#34495E;
+    color: white;
+    &:hover {
+      cursor: pointer;
+      background-color: #85929E;
+    }
+  }
+  .sub_order {
+    text-align: right;
+    margin: 1.5rem;
+    margin-bottom: 0;
+    margin-right: 0;
+  .btn-order {
+    background-color: #34495e;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 7px 15px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    &:hover {
+      background-color:#85929E;
+    }
+    &.disabled {
+      pointer-events: none;
+      background-color: #85929E;
+      cursor: none;
+    }
+}
+  }

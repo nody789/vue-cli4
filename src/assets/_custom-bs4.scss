@@ -1,0 +1,21 @@
+.btn-primary-lighter {
+    @include button-variant($primary-200, $primary-200);
+  }
+  
+  .btn-brand-light{
+    @include button-variant($white, $primary-200);
+  }
+
+
+  .nav.nav-dark {
+    &.nav-pills > .nav-link {
+      border: $primary-500 1px solid;
+    }
+    .nav-link {
+      color: $primary-500;
+    }
+    .nav-link.active {
+      background-color: $primary-500;
+      color: $primary;
+    }
+}

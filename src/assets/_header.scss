@@ -1,0 +1,84 @@
+.header {
+  position: relative;
+  .header-main-image {
+    height: 496px;
+  }
+ .header-image-context{
+   position: absolute;
+   right: 40px;
+   top: 40px;
+   @include media-breakpoint-up(xs){
+     right: 0;
+   }
+ }
+ 
+  $reactangle-height: 256px;
+  .rectangle-section {
+    margin-top: -90px;
+  }
+
+  .rectangle-image-wrap {
+    position: relative;
+    height: $reactangle-height;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    writing-mode: vertical-lr;
+    & + .rectangle-image-wrap {
+      border-left: 1px solid white;
+    }
+    &.active,
+    &:hover,
+    &:focus {
+      color: theme-color("#C4C4C4");
+      font-weight: bolder;
+      .rectangle-over {
+        background-color: rgba(theme-color("accent"), 0.8);
+      }
+    }
+  }
+
+  .rectangle-text {
+    font-size: 24px;
+    letter-spacing: 10px;
+    color: white;
+  }
+  .rectangle-over {
+    background-color: rgba(63, 93, 69, 0.5);
+  }
+
+  .rectangle-image {
+    position: absolute;
+    right: -10px;
+    left: -10px;
+    top: -10px;
+    bottom: -10px;
+    z-index: -2;
+  }
+}
+
+//section
+.bg-primary-lighter {
+  background-color: #eaf0ed;
+  .container {
+    max-width: 1140px;
+    .break-vertical-block {
+      margin-top: -24px;
+      margin-bottom: -24px;
+      .section-image {
+        min-height: 250px;
+      }
+    }
+    .section-content {
+      line-height: 2.5;
+      max-height: 420px;
+    }
+   
+  
+  }
+
+}
+

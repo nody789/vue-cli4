@@ -1,0 +1,47 @@
+
+
+
+
+.item-card{
+    display: flex;
+    flex-direction: column;
+    .item-image{
+        height: 315px;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+    }
+    .item-body{
+        border: 1px solid  #EAF0ED;
+    }
+    .item-icon{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .item-tag{
+        position: absolute;
+        left: 20px;
+        top: 0;
+        background-color: #3F5D45;
+        writing-mode: vertical-lr;
+        padding: 15px 10px;
+        color: white;
+        letter-spacing: 5px;
+        padding: 10px;
+    }
+   .item-name,.item-price{
+       padding-top: 15px;
+       padding-bottom: 15px;
+       font-size: 20px;
+   }
+  .item-name{
+      border-right: 1px solid #EAF0ED;
+  }
+
+}
+.list-group-item-action:hover{
+    color: white;
+}
