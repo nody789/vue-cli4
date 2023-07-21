@@ -330,14 +330,16 @@ export default {
   computed: {
     // 依類別篩選要顯示的商品資料
     filterProducts() {
-      // 先把.products 賦予tempProducts 為了在後面不改變products內容
       let tempProducts = this.products;
+      // 判断是否进行类别筛选
       if (this.isCurrent && this.isCurrent !== '全部商品') {
-        tempProducts = this.products.filter(
-          (item) => item.category === this.isCurrent,
-        );
-      } else if (this.searchFilter || this.searchResult.length) {
-        return this.setShowData(this.searchResult);
+        tempProducts = tempProducts.filter((item) => item.category === this.isCurrent);
+      }
+
+      // 判断是否进行搜索
+      if (this.searchFilter) {
+        const searchResult = tempProducts.filter((item) => item.title.includes(this.searchFilter));
+        return this.setShowData(searchResult);
       }
       return this.setShowData(tempProducts);
     },
