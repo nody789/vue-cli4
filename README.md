@@ -67,12 +67,10 @@ https://github.com/hexschool/vue-course-api-wiki/wiki
 * 點選購物車圖示加入購物車
 * 點選愛心圖示加入願望清單
 
-![商品列表](https://github.com/huai-sian/BMI-caculator/blob/main/prodductlist.gif)
 ### 商品詳情資訊
 * 選擇數量加入購物車
 * 顯示同系列的相關商品
 
-![商品詳情資訊](https://github.com/huai-sian/BMI-caculator/blob/main/productdetail.gif)
 ### 購物車結帳
 * 購物車結帳及調整購買品項及數量
 * 套用優惠券及填寫收件資料
